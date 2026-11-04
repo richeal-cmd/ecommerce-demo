@@ -34,4 +34,4 @@ export async function POST(request) {
 
   const product = await prisma.product.create({ data: result.data });
   return Response.json(product, { status: 201 });
-
+}
